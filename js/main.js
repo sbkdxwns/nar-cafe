@@ -130,6 +130,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const orderTotalPrice = document.getElementById('orderTotalPrice');
     const sendWhatsappOrderBtn = document.getElementById('sendWhatsappOrderBtn');
 
+    // Helper Toast Notification (replaces native alert)
+    function showToast(message) {
+        let toast = document.getElementById('custom-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'custom-toast';
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 24px;
+                right: 24px;
+                background-color: #2c3e50;
+                color: #ffffff;
+                padding: 12px 20px;
+                border-radius: 8px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                z-index: 9999;
+                font-family: system-ui, -apple-system, sans-serif;
+                font-size: 0.95rem;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                border-left: 4px solid #c0392b;
+            `;
+            document.body.appendChild(toast);
+        }
+
+        toast.innerHTML = `<i class="fa-solid fa-circle-check" style="color: #27ae60;"></i> <span>${message}</span>`;
+        
+        // Trigger entrance animation
+        requestAnimationFrame(() => {
+            toast.style.opacity = '1';
+            toast.style.transform = 'translateY(0)';
+        });
+
+        // Hide after 3 seconds
+        clearTimeout(toast.timeoutId);
+        toast.timeoutId = setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateY(20px)';
+        }, 3000);
+    }
+
     function updateCartUI() {
         const itemIds = Object.keys(cart);
 
@@ -187,6 +232,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             updateCartUI();
+
+            // Replaced browser alert with elegant toast notification
+            showToast(`"${name}" səbətə əlavə olundu!`);
         }
 
         // Increase Qty

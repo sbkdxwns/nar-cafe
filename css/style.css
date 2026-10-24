@@ -1151,6 +1151,7 @@ ul, ol {
 @media (max-width: 768px) {
     .mobile-nav-toggle {
         display: block;
+        margin-left: auto;
     }
 
     .nav-cta-btn {
@@ -1196,4 +1197,4 @@ ul, ol {
     .footer-container {
         grid-template-columns: 1fr;
     }
-}```````````````````````````````````````
+}
