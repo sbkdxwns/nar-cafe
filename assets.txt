@@ -1,0 +1,169 @@
+==============================================================================
+
+NAR CAFÉ - COMPLETE MEDIA & ASSETS CHECKLIST
+
+==============================================================================
+
+
+
+This list covers all images, icons, and media files required for the website.
+
+
+
+------------------------------------------------------------------------------
+
+1. LOGO & FAVICON
+
+------------------------------------------------------------------------------
+
+[x] assets/images/logo.svg (or .png) - Main Nar Café logo
+
+[x] assets/images/favicon.ico - Browser tab icon (32x32)
+
+[ ] assets/images/apple-touch-icon.png - Apple home screen icon (180x180)
+
+
+
+------------------------------------------------------------------------------
+
+2. PAGE & SECTION IMAGES
+
+------------------------------------------------------------------------------
+
+[x] assets/images/hero-cafe-interior.jpg - Hero banner image (1200x800)
+
+[x] assets/images/cafe-interior-about.jpg - About section photo (1100x800)
+
+[x] assets/images/og-share-image.jpg - Social media share preview (1200x630)
+
+
+
+------------------------------------------------------------------------------
+
+3. MENU & FEATURED DISH IMAGES (Recommended size: 600x400)  https://www.pinterest.com/pin/994240055251159111/
+
+------------------------------------------------------------------------------
+
+Coffee & Drinks:
+
+[x] assets/images/cappuccino.jpg - Cappuccino with latte art
+
+[x] assets/images/espresso.jpg - Espresso shot
+
+[x] assets/images/latte.jpg - Layered Latte Macchiato
+
+[x] assets/images/bumble.jpg - Iced Bumble coffee
+
+[x] assets/images/pomegranate-tea.jpg - Hot pomegranate tea with mint
+
+[x] assets/images/orange-juice.jpg - Fresh orange juice
+
+[x] assets/images/lemonade.jpg - Homemade mint lemonade
+
+
+
+Breakfast & Food:
+
+[x] assets/images/avocado-toast.jpg - Avocado & poached egg toast
+
+[x] assets/images/aze-breakfast.jpg - Traditional Azerbaijani breakfast
+
+[x] assets/images/croissant.jpg - Fresh croissant with chocolate
+
+
+
+Sweets & Desserts:
+
+[x] assets/images/san-sebastian.jpg - San Sebastian cheesecake
+
+[x] assets/images/medovik.jpg - Honey cake (Medovik)
+
+[x] assets/images/paxlava.jpg - Azerbaijani Shekerbura & Baklava set
+
+
+
+------------------------------------------------------------------------------
+
+4. GALLERY IMAGES (Full-size & Thumbnails)
+
+------------------------------------------------------------------------------
+
+Item 1 (Barista at work):
+
+[ ] assets/images/gallery-1.jpg (1600x1066)
+
+[ ] assets/images/gallery-1-thumb.jpg (600x400)
+
+
+
+Item 2 (Reading corner / Window seat):
+
+[ ] assets/images/gallery-2.jpg (1600x1066)
+
+[ ] assets/images/gallery-2-thumb.jpg (600x400)
+
+
+
+Item 3 (Dessert display vitrine):
+
+[ ] assets/images/gallery-3.jpg (1600x1066)
+
+[ ] assets/images/gallery-3-thumb.jpg (600x400)
+
+
+
+Item 4 (Breakfast table overhead view):
+
+[ ] assets/images/gallery-4.jpg (1600x1066)
+
+[ ] assets/images/gallery-4-thumb.jpg (600x400)
+
+
+
+Item 5 (Outdoor terrace / Patio):
+
+[ ] assets/images/gallery-5.jpg (1600x1066)
+
+[ ] assets/images/gallery-5-thumb.jpg (600x400)
+
+
+
+Item 6 (Latte art detail close-up):
+
+[ ] assets/images/gallery-6.jpg (1600x1066)
+
+[ ] assets/images/gallery-6-thumb.jpg (600x400)
+
+
+
+------------------------------------------------------------------------------
+
+5. UI ICONS (SVG Format)
+
+------------------------------------------------------------------------------
+
+[ ] assets/icons/icon-menu.svg - Mobile hamburger menu
+
+[ ] assets/icons/icon-close.svg - Close button (X)
+
+[ ] assets/icons/icon-search.svg - Search glass icon
+
+[ ] assets/icons/icon-cart.svg - Cart / Basket icon
+
+[ ] assets/icons/icon-leaf.svg - Fresh ingredients highlight
+
+[ ] assets/icons/icon-cup.svg - Atmosphere highlight
+
+[ ] assets/icons/icon-smile.svg - Friendly service highlight
+
+[ ] assets/icons/icon-pin.svg - Location pin icon
+
+[ ] assets/icons/icon-phone.svg - Phone icon
+
+[ ] assets/icons/icon-whatsapp.svg - WhatsApp brand icon
+
+[ ] assets/icons/icon-instagram.svg - Instagram social icon
+
+[ ] assets/icons/icon-facebook.svg - Facebook social icon
+
+==============================================================================

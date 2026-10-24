@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nar Café - Bakıda rahat atmosfer, təzə qəhvə, ləzzətli səhər yeməkləri və şirniyyatlar.">
+    <title>Nar Café | Təzə Qəhvə və Rahat Atmosfer</title>
+
+    <!-- Dynamic SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23c0392b'/><path d='M50 22 C32 22 20 36 20 54 C20 72 34 84 50 84 C66 84 80 72 80 54 C80 36 68 22 50 22 Z' fill='%23e74c3c'/><path d='M50 14 Q52 20 48 24 Q44 20 50 14 Z' fill='%2327ae60'/><circle cx='40' cy='46' r='3' fill='%23ffffff'/><circle cx='52' cy='42' r='3.5' fill='%23ffffff'/><circle cx='60' cy='50' r='3' fill='%23ffffff'/><circle cx='44' cy='58' r='3.5' fill='%23ffffff'/><circle cx='56' cy='62' r='3' fill='%23ffffff'/></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 CDN Icons Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================ -->
+    <!-- A. HEADER AND NAVIGATION                     -->
+    <!-- ============================================ -->
+    <header class="site-header" id="header">
+        <div class="header-container">
+            <!-- Brand Logo with SVG Pomegranate Icon -->
+            <a href="#hero" class="brand-logo" aria-label="Nar Café Ana Səhifə">
+                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+                    <circle cx="50" cy="54" r="42" fill="#c0392b"/>
+                    <path d="M50 18 Q54 26 48 30 Q42 26 50 18 Z" fill="#27ae60"/>
+                    <circle cx="38" cy="48" r="4" fill="#ffffff" opacity="0.9"/>
+                    <circle cx="52" cy="44" r="4.5" fill="#ffffff" opacity="0.9"/>
+                    <circle cx="62" cy="54" r="4" fill="#ffffff" opacity="0.9"/>
+                    <circle cx="44" cy="62" r="4.5" fill="#ffffff" opacity="0.9"/>
+                    <circle cx="58" cy="66" r="4" fill="#ffffff" opacity="0.9"/>
+                </svg>
+                <div class="logo-text-group">
+                    <span class="logo-text">Nar Café</span>
+                    <span class="logo-subtext">Baku</span>
+                </div>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button type="button" 
+                    class="mobile-nav-toggle" 
+                    id="mobileNavToggle" 
+                    aria-controls="primaryNav" 
+                    aria-expanded="false" 
+                    aria-label="Menyunu aç/bağla">
+                <i class="fa-solid fa-bars hamburger-icon" aria-hidden="true"></i>
+            </button>
+
+            <!-- Primary Navigation Links -->
+            <nav class="primary-nav" id="primaryNav" aria-label="Əsas naviqasiya">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link"><i class="fa-solid fa-house nav-icon"></i>Ana səhifə</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link"><i class="fa-solid fa-utensils nav-icon"></i>Menyu</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-circle-info nav-icon"></i>Haqqımızda</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link"><i class="fa-solid fa-images nav-icon"></i>Qalereya</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-location-dot nav-icon"></i>Əlaqə</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Action CTA -->
+            <div class="header-actions">
+                <a href="#order-builder" class="btn btn-primary nav-cta-btn">
+                    <i class="fa-solid fa-cart-shopping"></i> Sifariş et
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ============================================ -->
+        <!-- B. HERO SECTION                              -->
+        <!-- ============================================ -->
+        <section class="hero-section" id="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-mug-hot"></i> Ən Təzə Qəhvə Və Səmimiyyət</span>
+                    <h1 class="hero-title" id="hero-title">Hər fincanda bir az rahatlıq.</h1>
+                    <p class="hero-description">
+                        Bakının mərkəzində təzə qovrulmuş qəhvə dənlərinin ətri, ev sayağı səhər yeməkləri və səmimi atmosfer. Gününüzə şirin və enerjili bir fasilə verin.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Menyua bax</a>
+                        <a href="#location" class="btn btn-secondary"><i class="fa-solid fa-map-pin"></i> Bizi tapın</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <img src="assets/images/hero-cafe-interior.jpg" 
+                         alt="Nar Café daxili rahat interyeri, masalar və rahat işıqlandırma" 
+                         class="hero-img" 
+                         width="600" 
+                         height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- C. FEATURED DISHES                           -->
+        <!-- ============================================ -->
+        <section class="featured-section" id="featured" aria-labelledby="featured-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title" id="featured-title">Önə Çıxan Ləzzətlər</h2>
+                    <p class="section-subtitle">Müştərilərimizin ən çox sevdiyi xüsusi təkliflərimiz</p>
+                </div>
+
+                <div class="featured-grid">
+                    <!-- Featured Item 1 -->
+                    <article class="dish-card featured-card">
+                        <div class="dish-image-wrapper">
+                            <span class="badge badge-popular"><i class="fa-solid fa-fire"></i> Populyar</span>
+                            <img src="assets/images/cappuccino.jpg" alt="Klassik Cappuccino qəhvəsi" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Klassik Cappuccino</h3>
+                            <p class="dish-description">Zərif süd köpüyü və espresso balansı ilə hazırlanmış klassik İtalyan qəhvəsi.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">5.50 AZN</span>
+                                <button type="button" 
+                                        class="btn btn-sm btn-outline add-to-cart-btn" 
+                                        data-id="feat-1" 
+                                        data-name="Klassik Cappuccino" 
+                                        data-price="5.50">
+                                    <i class="fa-solid fa-plus"></i> Sifarişə əlavə et
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Featured Item 2 -->
+                    <article class="dish-card featured-card">
+                        <div class="dish-image-wrapper">
+                            <span class="badge badge-special"><i class="fa-solid fa-star"></i> Şefdən Təklif</span>
+                            <img src="assets/images/avocado-toast.jpg" alt="Avokado və yumurtalı tost" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Avokado və Yumurtalı Tost</h3>
+                            <p class="dish-description">Qızartmış qara çörək üzərində təzə avokado əzməsi, poşe yumurta və xüsusi ədviyyatlar.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">8.00 AZN</span>
+                                <button type="button" 
+                                        class="btn btn-sm btn-outline add-to-cart-btn" 
+                                        data-id="feat-2" 
+                                        data-name="Avokado və Yumurtalı Tost" 
+                                        data-price="8.00">
+                                    <i class="fa-solid fa-plus"></i> Sifarişə əlavə et
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Featured Item 3 -->
+                    <article class="dish-card featured-card">
+                        <div class="dish-image-wrapper">
+                            <span class="badge badge-popular"><i class="fa-solid fa-fire"></i> Populyar</span>
+                            <img src="assets/images/san-sebastian.jpg" alt="San Sebastian çizkeyki" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">San Sebastian Çizkeyk</h3>
+                            <p class="dish-description">İpək kimi krem konsistensiyalı, üstü yüngül yanmış şokolad soslu məşhur İspan kremi.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">7.50 AZN</span>
+                                <button type="button" 
+                                        class="btn btn-sm btn-outline add-to-cart-btn" 
+                                        data-id="feat-3" 
+                                        data-name="San Sebastian Çizkeyk" 
+                                        data-price="7.50">
+                                    <i class="fa-solid fa-plus"></i> Sifarişə əlavə et
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Featured Item 4 -->
+                    <article class="dish-card featured-card">
+                        <div class="dish-image-wrapper">
+                            <span class="badge badge-new"><i class="fa-solid fa-sparkles"></i> Yeni</span>
+                            <img src="assets/images/pomegranate-tea.jpg" alt="Xüsusi Nar çayı" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Xüsusi Nar Çayı</h3>
+                            <p class="dish-description">Təbii nar dənələri, darçın və nanə yarpaqları ilə dəmlənmiş ev üsulu istiqanlı çay.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">4.50 AZN</span>
+                                <button type="button" 
+                                        class="btn btn-sm btn-outline add-to-cart-btn" 
+                                        data-id="feat-4" 
+                                        data-name="Xüsusi Nar Çayı" 
+                                        data-price="4.50">
+                                    <i class="fa-solid fa-plus"></i> Sifarişə əlavə et
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- D. FULL INTERACTIVE MENU                     -->
+        <!-- ============================================ -->
+        <section class="menu-section" id="menu" aria-labelledby="menu-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title" id="menu-title">Bizim Menyu</h2>
+                    <p class="section-subtitle">Təzə inqrediyentlərlə sevgi ilə hazırlanan təamlarımız</p>
+                </div>
+
+                <!-- Menu Controls: Search and Category Filter -->
+                <div class="menu-controls">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                        <label for="menuSearchInput" class="visually-hidden">Menyuda axtarış</label>
+                        <input type="search" 
+                               id="menuSearchInput" 
+                               class="menu-search-input" 
+                               placeholder="Menyuda yemek va ya içki axtarın..." 
+                               aria-label="Menyuda axtarış yapın">
+                    </div>
+
+                    <div class="category-filters" id="categoryFilters" role="tablist" aria-label="Menyu kateqoriyaları">
+                        <button type="button" class="filter-btn active" data-category="all" role="tab" aria-selected="true"><i class="fa-solid fa-border-all"></i> Hamısı</button>
+                        <button type="button" class="filter-btn" data-category="coffee" role="tab" aria-selected="false"><i class="fa-solid fa-mug-hot"></i> Qəhvə</button>
+                        <button type="button" class="filter-btn" data-category="breakfast" role="tab" aria-selected="false"><i class="fa-solid fa-egg"></i> Səhər yeməyi</button>
+                        <button type="button" class="filter-btn" data-category="sweets" role="tab" aria-selected="false"><i class="fa-solid fa-cake-candles"></i> Şirniyyat</button>
+                        <button type="button" class="filter-btn" data-category="drinks" role="tab" aria-selected="false"><i class="fa-solid fa-glass-water"></i> İçkilər</button>
+                    </div>
+                </div>
+
+                <!-- Interactive Menu Cards Container -->
+                <div class="menu-grid" id="menuGrid">
+                    
+                    <!-- Coffee Items -->
+                    <article class="dish-card menu-card" data-category="coffee" data-price="4.00" data-name="Espresso">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/espresso.jpg" alt="Tünd və təmiz Espresso qəhvəsi" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Espresso</h3>
+                            <p class="dish-description">Yüksək keyfiyyətli Arabica dənələrindən hazırlanmış tünd konsentrasiyalı qəhvə.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">4.00 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m1" data-name="Espresso" data-price="4.00"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="dish-card menu-card" data-category="coffee" data-price="5.00" data-name="Latte Macchiato">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/latte.jpg" alt="Qat-qat zərif Latte Macchiato" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Latte Macchiato</h3>
+                            <p class="dish-description">Bol buxarlanmış süt, yumşaq espresso və incə süt köpüyü.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">5.00 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m2" data-name="Latte Macchiato" data-price="5.00"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="dish-card menu-card" data-category="coffee" data-price="6.00" data-name="Bumble Coffee">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/bumble.jpg" alt="Soyuq Bumble qəhvəsi portağal şirəsi ilə" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Bumble Coffee</h3>
+                            <p class="dish-description">Təbii portağal şirəsi, espresso və karamel şərbətinin sərinləşdirici sintezi.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">6.00 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m3" data-name="Bumble Coffee" data-price="6.00"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Breakfast Items -->
+                    <article class="dish-card menu-card" data-category="breakfast" data-price="12.00" data-name="Ənənəvi Azərbaycan Səhər Yeməyi">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/aze-breakfast.jpg" alt="Zəngin Azərbaycan səhər yeməyi süfrəsi" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Ənənəvi Azərbaycan Səhər Yeməyi</h3>
+                            <p class="dish-description">Kərə yağı, bal, şor, təzə təndir çörəyi, yumurta, zeytun və pomidor-xiyar assortisi.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">12.00 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m4" data-name="Ənənəvi Azərbaycan Səhər Yeməyi" data-price="12.00"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="dish-card menu-card" data-category="breakfast" data-price="7.00" data-name="Kruassan və Şokolad Yağı">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/croissant.jpg" alt="Təzə bişmiş fransız kruassanı" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Kruassan və Şokolad Yağı</h3>
+                            <p class="dish-description">Gündəlik təzə bişən xırçıldayan fransız kruassanı, fındıqlı şokolad yağı ilə.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">7.00 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m5" data-name="Kruassan və Şokolad Yağı" data-price="7.00"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Sweets / Desserts Items -->
+                    <article class="dish-card menu-card" data-category="sweets" data-price="6.50" data-name="Ballı Tort (Medovik)">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/medovik.jpg" alt="Ənənəvi ev üsulu Ballı Tort Medovik" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Ballı Tort (Medovik)</h3>
+                            <p class="dish-description">Təbii bal qatları və xüsusi xama kremi ilə hazırlanan yumşaq klassik tort.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">6.50 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m6" data-name="Ballı Tort (Medovik)" data-price="6.50"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="dish-card menu-card" data-category="sweets" data-price="5.50" data-name="Milli Şəkərbura və Paxlava">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/paxlava.jpg" alt="Qozlu milli şəkərbura və paxlava seti" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Milli Şəkərbura və Paxlava</h3>
+                            <p class="dish-description">Qoz və zəfəran şərbəti ilə hazırlanan milli çay dəsgahı ləzzəti (2 ədəd).</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">5.50 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m7" data-name="Milli Şəkərbura və Paxlava" data-price="5.50"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Drinks Items -->
+                    <article class="dish-card menu-card" data-category="drinks" data-price="5.00" data-name="Təzə Sıxılmış Portağal Şirəsi">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/orange-juice.jpg" alt="Təzə sıxılmış portağal şirəsi stəkanda" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Təzə Sıxılmış Portağal Şirəsi</h3>
+                            <p class="dish-description">Mövsimi təzə portağallardan sifariş anında sıxılan vitaminli içki.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">5.00 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m8" data-name="Təzə Sıxılmış Portağal Şirəsi" data-price="5.00"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="dish-card menu-card" data-category="drinks" data-price="4.50" data-name="Ev Üsulu Nanəli Limonad">
+                        <div class="dish-image-wrapper">
+                            <img src="assets/images/lemonade.jpg" alt="Buzlu nanəli limonad stəkanı" class="dish-img">
+                        </div>
+                        <div class="dish-content">
+                            <h3 class="dish-title">Ev Üsulu Nanəli Limonad</h3>
+                            <p class="dish-description">Təzə limon şirəsi, nanə yarpaqları və yüngül qazlaşdırılmış sərinləşdirici içki.</p>
+                            <div class="dish-footer">
+                                <span class="dish-price">4.50 AZN</span>
+                                <button type="button" class="btn btn-sm btn-primary add-to-cart-btn" data-id="m9" data-name="Ev Üsulu Nanəli Limonad" data-price="4.50"><i class="fa-solid fa-plus"></i> Əlavə et</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Empty search result fallback container -->
+                <div class="search-empty-state hidden" id="searchEmptyState">
+                    <i class="fa-solid fa-magnifying-glass-minus empty-icon"></i>
+                    <p>Axtarışınıza uyğun heç bir məhsul tapılmadı.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- E. ABOUT SECTION                             -->
+        <!-- ============================================ -->
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="section-container">
+                <div class="about-grid">
+                    <div class="about-media">
+                        <img src="assets/images/cafe-interior-about.jpg" 
+                             alt="Nar Café samimi interyeri və işçi heyəti" 
+                             class="about-img" 
+                             width="550" 
+                             height="400">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title" id="about-title">Haqqımızda</h2>
+                        <p class="about-text">
+                            Nar Café — şəhərin səs-küyündən uzaqlaşıb sakitlik tapacağınız, dostlarınızla xoş təəssüratları paylaşacağınız məkandır. Biz hər gün yalnız təzə, seçilmiş inqrediyentlərdən istifadə edərək sizə unudulmaz dadlar təqdim edirik.
+                        </p>
+                        
+                        <div class="highlights-list">
+                            <div class="highlight-item">
+                                <div class="highlight-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+                                <div class="highlight-body">
+                                    <h3 class="highlight-title">Təzə İnqrediyentlər</h3>
+                                    <p class="highlight-desc">Gündəlik təmin edilən təbiət təravətli ərzaqlar və yüksək keyfiyyətli qəhvə dənləri.</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-item">
+                                <div class="highlight-icon" aria-hidden="true"><i class="fa-solid fa-couch"></i></div>
+                                <div class="highlight-body">
+                                    <h3 class="highlight-title">Rahat Atmosfer</h3>
+                                    <p class="highlight-desc">Müasir və estetik dizayn, rahat oturacaqlar və işləmək üçün sakit mühit.</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-item">
+                                <div class="highlight-icon" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+                                <div class="highlight-body">
+                                    <h3 class="highlight-title">Gülərüz Xidmət</h3>
+                                    <p class="highlight-desc">Sizi hər zaman təbəssümlə qarşılayan və məmnuniyyətinizi düşünən peşəkar komanda.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- F. GALLERY                                   -->
+        <!-- ============================================ -->
+        <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title" id="gallery-title">Qalereya</h2>
+                    <p class="section-subtitle">Kafemizdən və təamlarımızdan gözəl anlar</p>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <a href="assets/images/gallery-1.jpg" class="gallery-item" data-lightbox="gallery" data-title="Barista qəhvə hazırlayarkən">
+                        <img src="assets/images/gallery-1-thumb.jpg" alt="Barista peşəkarlıqla espresso dəmləyir" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                    </a>
+                    <a href="assets/images/gallery-2.jpg" class="gallery-item" data-lightbox="gallery" data-title="Rahat guşəmiz və kitab rəfi">
+                        <img src="assets/images/gallery-2-thumb.jpg" alt="Kafenin işıqlı və rahat pəncərə önü guşəsi" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                    </a>
+                    <a href="assets/images/gallery-3.jpg" class="gallery-item" data-lightbox="gallery" data-title="Təzə bişmiş desertlər vitrini">
+                        <img src="assets/images/gallery-3-thumb.jpg" alt="Vitrinə düzülmüş müxtəlif lezzətli desertlər" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                    </a>
+                    <a href="assets/images/gallery-4.jpg" class="gallery-item" data-lightbox="gallery" data-title="Səhər yeməyi masası">
+                        <img src="assets/images/gallery-4-thumb.jpg" alt="Zəngin səhər yeməyi süfrəsinin üst tərəfdən görünüşü" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                    </a>
+                    <a href="assets/images/gallery-5.jpg" class="gallery-item" data-lightbox="gallery" data-title="Açıq hava terrası">
+                        <img src="assets/images/gallery-5-thumb.jpg" alt="Kafenin yaşıllıqlar içində olan açıq hava terrası" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                    </a>
+                    <a href="assets/images/gallery-6.jpg" class="gallery-item" data-lightbox="gallery" data-title="Xüsusi Art Latte hazırlığı">
+                        <img src="assets/images/gallery-6-thumb.jpg" alt="Fincanda naxışlı latte art görünüşü" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Lightbox Modal Container Placeholder -->
+        <div class="lightbox-modal hidden" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Şəkil böyüdücü">
+            <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Bağla"><i class="fa-solid fa-xmark"></i></button>
+            <div class="lightbox-content">
+                <img src="" alt="" id="lightboxImage" class="lightbox-img">
+                <p id="lightboxCaption" class="lightbox-caption"></p>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- G. OPENING HOURS AND LOCATION                -->
+        <!-- ============================================ -->
+        <section class="location-section" id="location" aria-labelledby="location-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title" id="location-title">İş Saatları və Ünvan</h2>
+                    <p class="section-subtitle">Sizi qonaq görməkdən şad olarıq</p>
+                </div>
+
+                <div class="location-grid">
+                    <!-- Opening Hours Card -->
+                    <div class="info-card hours-card">
+                        <h3 class="info-card-title"><i class="fa-regular fa-clock"></i> İş Saatları</h3>
+                        <ul class="hours-list">
+                            <li class="hours-item"><span class="day">Bazar ertəsi - Cümə:</span> <span class="time">08:00 - 22:00</span></li>
+                            <li class="hours-item"><span class="day">Şənbə:</span> <span class="time">09:00 - 23:00</span></li>
+                            <li class="hours-item"><span class="day">Bazar:</span> <span class="time">09:00 - 22:00</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact & Map Link Card -->
+                    <div class="info-card address-card">
+                        <h3 class="info-card-title"><i class="fa-solid fa-location-dot"></i> Ünvan və Əlaqə</h3>
+                        <p class="address-text">
+                            <strong>Ünvan:</strong> 55 Seyfəddin Dağlı, Bakı 1141, Azərbaycan <br>
+                        </p>
+                        <p class="phone-text">
+                            <strong>Telefon:</strong> <a href="tel:+994555446699">+994 55 544 66 99</a>
+                        </p>
+                        <div class="map-link-wrapper">
+                            <a href="https://maps.google.com/?cid=14045831019585356063" target="_blank" rel="noopener noreferrer" class="btn btn-outline map-btn">
+                                <i class="fa-solid fa-map-location-dot"></i> Google Maps-də xəritəyə baxın
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- H. CONTACT AND WHATSAPP ORDERING             -->
+        <!-- ============================================ -->
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title" id="contact-title">Əlaqə və WhatsApp Sifarişi</h2>
+                    <p class="section-subtitle">Sualınız var və ya onlayn sifariş vermək istəyirsiniz?</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Direct Contact Channels -->
+                    <div class="contact-info">
+                        <h3><i class="fa-solid fa-headset"></i> Birbaşa Əlaqə</h3>
+                        <p>Bizə zəng edə və ya sosial şəbəkələrdən yaza bilərsiniz.</p>
+                        <ul class="contact-links-list">
+                            <li>
+                                <strong>Zəng üçün:</strong> 
+                                <a href="tel:+994555446699" class="contact-link"><i class="fa-solid fa-phone"></i> +994 55 544 66 99</a>
+                            </li>
+                            <li>
+                                <strong>WhatsApp xətti:</strong> 
+                                <a href="https://wa.me/994555446699" target="_blank" rel="noopener noreferrer" class="contact-link highlight-link">
+                                    <i class="fa-brands fa-whatsapp"></i> WhatsApp ilə birbaşa yazın
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Interactive Order Builder Container -->
+                    <div class="order-builder-card" id="order-builder">
+                        <h3 class="order-builder-title"><i class="fa-solid fa-basket-shopping"></i> Sifariş Səbəti</h3>
+                        <p class="order-builder-subtitle">Menyudan məhsul əlavə edin və WhatsApp ilə göndərin.</p>
+
+                        <!-- Empty State Notice -->
+                        <div class="order-empty-state" id="orderEmptyState">
+                            <i class="fa-solid fa-cart-flatbed-suitcases cart-empty-icon"></i>
+                            <p>Səbətiniz hal-hazırda boşdur. Menyudan istədiyiniz təamı əlavə edin.</p>
+                        </div>
+
+                        <!-- Dynamic Cart List (populated via JS) -->
+                        <ul class="order-items-list hidden" id="orderItemsList" aria-live="polite">
+                            <!-- JS Will append <li> elements here -->
+                        </ul>
+
+                        <!-- Order Summary -->
+                        <div class="order-summary">
+                            <div class="total-row">
+                                <span class="total-label">Cəmi məbləğ:</span>
+                                <span class="total-price" id="orderTotalPrice">0.00 AZN</span>
+                            </div>
+
+                            <button type="button" 
+                                    class="btn btn-whatsapp order-submit-btn" 
+                                    id="sendWhatsappOrderBtn" 
+                                    disabled>
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp ilə Sifarişi Göndər
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!-- I. FOOTER                                    -->
+    <!-- ============================================ -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-brand-header">
+                    <svg class="footer-logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true">
+                        <circle cx="50" cy="54" r="42" fill="#c0392b"/>
+                        <path d="M50 18 Q54 26 48 30 Q42 26 50 18 Z" fill="#27ae60"/>
+                        <circle cx="38" cy="48" r="4" fill="#ffffff" opacity="0.9"/>
+                        <circle cx="52" cy="44" r="4.5" fill="#ffffff" opacity="0.9"/>
+                        <circle cx="62" cy="54" r="4" fill="#ffffff" opacity="0.9"/>
+                    </svg>
+                    <span class="footer-logo">Nar Café</span>
+                </div>
+                <p class="footer-tagline">Hər fincanda bir az rahatlıq və təbiət dadı.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">Tez Keçidlər</h4>
+                <ul class="footer-nav">
+                    <li><a href="#hero"><i class="fa-solid fa-angle-right"></i> Ana səhifə</a></li>
+                    <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Menyu</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-angle-right"></i> Haqqımızda</a></li>
+                    <li><a href="#gallery"><i class="fa-solid fa-angle-right"></i> Qalereya</a></li>
+                    <li><a href="#location"><i class="fa-solid fa-angle-right"></i> Ünvan</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Əlaqə Məlumatları</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 55 Seyfəddin Dağlı, Bakı 1141</p>
+                <p><i class="fa-solid fa-phone"></i> +994 55 544 66 99</p>
+                <p><i class="fa-solid fa-envelope"></i> info@narcafe.az</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-col social-col">
+                <h4 class="footer-heading">Bizə Qoşulun</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram səhifəmiz"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook səhifəmiz"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/994555446699" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Nar Café. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript File Link -->
+    <script src="js/main.js"></script>
+</body>
+</html>
